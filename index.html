@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wassim Maaoui" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="intro">
+          <h1 class="title">Simple, traffic-based pricing</h1>
+          <div class="text-container">
+            <p class="text">Sign-up for our 30-day trial.</p>
+            <p class="text">No credit card required.</p>
+          </div>
+        </div>
+        <div class="container">
+          <section class="settings-section">
+            <h2 class="title"><span id="pageviews">100K</span> Pageviews</h2>
+            <div class="slider-container">
+              <input
+                type="range"
+                id="rangeInput"
+                min="0"
+                max="4"
+                step="1"
+                value="2"
+              />
+            </div>
+            <div class="value">
+              <strong id="value">$16.00</strong><span>/ month</span>
+            </div>
+            <div class="billing-options">
+              <div class="options-container">
+                <p>Monthly Billing</p>
+                <div class="button">
+                  <div class="circle"></div>
+                </div>
+                <p>Yearly Billing</p>
+              </div>
+              <p>-25% <span class="discount">discount</span></p>
+            </div>
+          </section>
+          <section class="trial-section">
+            <ul>
+              <li>
+                <span
+                  ><img src="./images/icon-check.svg" alt="check icon" /></span
+                ><span>Unlimited websites</span>
+              </li>
+              <li>
+                <span
+                  ><img src="./images/icon-check.svg" alt="check icon" /></span
+                ><span>100% data ownership</span>
+              </li>
+              <li>
+                <span
+                  ><img src="./images/icon-check.svg" alt="check icon" /></span
+                ><span>Email reports</span>
+              </li>
+            </ul>
+            <button type="button" class="trial-button">Start my trial</button>
+          </section>
+        </div>
+      </article>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
